@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+}
+
+#header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+#header .container .mobile_navigation_icon {
+  display: none;
+}
+@media (max-width: 575px) {
+  #header .container .mobile_navigation_icon {
+    display: block;
+  }
+}
+#header .container .navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+#header .container .navigation_list {
+  display: flex;
+  list-style-type: none;
+}
+@media (max-width: 575px) {
+  #header .container .navigation_list {
+    display: none;
+  }
+}
+#header .container .navigation_list_item {
+  margin-right: 30px;
+}
+#header .container .navigation_list_item_link {
+  text-decoration: none;
+  color: #000;
+}
+
+#main .content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+}
+#main .content_link {
+  list-style-type: none;
+  color: #fff;
+}
+#main #post__universe .post__universe-content {
+  width: 100%;
+  height: 700px;
+  background-color: #3c1616;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 575px) {
+  #main #post__universe .post__universe-content {
+    flex-direction: column-reverse;
+  }
+}
+#main #post__universe .post__universe-content-img .left_photo {
+  width: 90%;
+  height: 700px;
+}
+#main #post__universe .post__universe-content-title {
+  color: #fff;
+  margin-left: 6%;
+  font-size: 25px;
+  line-height: 40px;
+}
+#main #post__universe .post__universe-content-title .button {
+  border-radius: 5px;
+  padding: 12px 30px;
+}
+#main #post__universe .post__universe-content-title .button_size {
+  color: #fff;
+  font-size: 14px;
+}
+@media (max-width: 575px) {
+  #main #post__universe .post__universe-content-title .button {
+    background-color: #fff;
+  }
+}
+@media (max-width: 575px) {
+  #main #post__universe .post__universe-content-title {
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+  }
+}
+#main #top3 .container {
+  width: 100%;
+  height: 700px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+#main #top3 .container .content {
+  font-size: 30px;
+  padding: 80px;
+  background-color: #fff;
+  color: #000;
+}
+#main #top3 .collection_photo {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+  gap: 15px;
+}
+#main #top3 .collection_photo .product {
+  width: 300px;
+  height: 500px;
+}/*# sourceMappingURL=home.css.map */
